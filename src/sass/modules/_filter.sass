@@ -1,19 +1,24 @@
 @use '../variables' as *
+@use '../media' as *
 
 .filter
 	&__container
 		display: flex
 		justify-content: space-between
 		align-items: center
-		gap: 30px
+		gap: 32px
+		flex-wrap: wrap
 	&__group
 		display: flex
+		flex-wrap: wrap
 		border: 0
 		padding: 0
 		margin: 0
 		gap: 12px
 	&_choices
 		gap: 64px
+		+mobile
+			gap: 40px
 	&__radio
 		appearance: none
 		position: absolute
@@ -27,6 +32,14 @@
 		background-position: center left 16px
 		background-repeat: no-repeat
 		background-size: 40px
+		min-height: 72px
+		display: flex
+		align-items: center
+		+mobile
+			padding: 10px 12px 10px 40px
+			background-position: center left 12px
+			background-size: 24px
+			min-height: 40px
 		&_flowers
 			background-image: url(/img/bouquet.png)
 		&_toys
