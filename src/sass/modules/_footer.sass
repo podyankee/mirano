@@ -1,15 +1,18 @@
 @use '../variables' as *
+@use '../media' as *
 
 .footer
 	padding: 80px 0
 	background: $footer url('/img/figure.svg') no-repeat
 	background-position: bottom
-	background-size: contain
+	background-size: 100%
 	&__container
 		display: flex
 		flex-direction: column
 		align-items: center
 		gap: 60px
+		+tablet
+			gap: 40px
 	&__logo
 		width: 200px
 	&__address
