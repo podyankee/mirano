@@ -1,4 +1,4 @@
-export const API_URL = 'https://rhinestone-acidic-plow.glitch.me/';
+export const API_URL = 'https://rhinestone-acidic-plow.glitch.me';
 // export const API_URL = 'http://localhost:3000';
 
 export const fetchProducts = async () => {
