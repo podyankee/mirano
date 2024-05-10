@@ -4,14 +4,16 @@ import { initChoices } from '@/scripts/choices';
 import { initCart } from '@/scripts/cart';
 import { renderProducts } from '@/scripts/renderProducts';
 import { store } from './scripts/Store';
-import { fetchProducts } from './scripts/API';
+import { initChoicesType } from './scripts/choicesType';
+import { filterProducts } from './scripts/filterProducts';
 
 const init = () => {
 	initHeaderFixer();
 	initChoices();
+	initChoicesType();
 	initCart();
-	fetchProducts({ type: 'bouquets', minPrice: 3000 });
 	renderProducts();
+	filterProducts();
 };
 
 document.addEventListener('DOMContentLoaded', init);

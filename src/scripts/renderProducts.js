@@ -9,7 +9,6 @@ export const renderProducts = async () => {
 		goodsList.innerHTML = '';
 
 		products.forEach(product => {
-			console.log(product);
 			const productCard = ProductCard(product);
 			goodsList.append(productCard);
 		});
