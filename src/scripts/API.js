@@ -13,8 +13,8 @@ const formatQueryString = params => {
 	return `?${searchParams.toString()}`;
 };
 
-//export const API_URL = 'https://rhinestone-acidic-plow.glitch.me';
-export const API_URL = 'http://localhost:3000';
+export const API_URL = 'https://nebula-noisy-silicon.glitch.me/';
+// export const API_URL = 'http://localhost:3000';
 
 export const fetchProducts = async (params = {}) => {
 	try {
